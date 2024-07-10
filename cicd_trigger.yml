@@ -4,15 +4,15 @@
 # See the comments for the default trigger values
   platforms: 
     linux:
-      base_image: false            #true 
+      base_image: true            #true 
       build_types:
-        pr_base: false             #true
-        main_base: false           #true
+        pr_base: true             #true
+        main_base: true           #true
       run_test:
         main_test: false         #false
-        build_pyatk: false         #true
-        build_pyaraas: false      #true
-      release: false             #true
+        build_pyatk: true         #true
+        build_pyaraas: true      #true
+      release: true             #true
 
     windows:
       base_image: true            #true
@@ -20,7 +20,7 @@
         pr_base: true             #true
         main_base: true           #true
       run_test:
-        main_test: true          #false
+        main_test: false          #false
         build_pyatk: true         #true
         build_pyaraas: true       #true
       release: true               #true
@@ -28,7 +28,7 @@
     macOs:
       run_test:
         main_test: false         #false
-        build_server: false       #true 
+        build_server: true       #true 
 
 
 
