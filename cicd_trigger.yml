@@ -9,7 +9,7 @@
         pr_base: false             #true
         main_base: false           #true
       run_test:
-        main_test: true         #false
+        main_test: false         #false
         build_pyatk: false         #true
         build_pyaraas: false      #true
       release: false             #true
