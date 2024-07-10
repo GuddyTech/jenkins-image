@@ -4,9 +4,9 @@
 # See the comments for the default trigger values
   platforms: 
     linux:
-      base_image: true            #true 
+      base_image: false            #true 
       build_types:
-        pr_base: false             #true
+        pr_base: true             #true
         main_base: true           #true
       run_test:
         main_test: false         #false
