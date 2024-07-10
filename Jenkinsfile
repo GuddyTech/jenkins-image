@@ -1,4 +1,4 @@
- // Special thanks to Frazer Seymour for inspiration for a lot of this Jenkinsfi
+ // Special thanks to Frazer Seymour for inspiration for a lot of this Jenkinsf
 
 // @Library(['PSL@master']) _
 
