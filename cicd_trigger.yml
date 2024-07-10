@@ -20,7 +20,7 @@
         pr_base: true             #true
         main_base: true           #true
       run_test:
-        main_test: false          #false
+        main_test: true          #false
         build_pyatk: true         #true
         build_pyaraas: true       #true
       release: true               #true
