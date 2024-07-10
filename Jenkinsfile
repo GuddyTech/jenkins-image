@@ -74,7 +74,7 @@ pipeline {
         stage("[PR] ubuntu-focal-araas-base") {
           when {
             allOf {
-              expression { return cicd_config.platforms.linux.build_types.pr_base && (changeset.includes('infra/dependencies/.*') || changeset.includes('infra/containers/ubuntu-focal-araas-base/.*'))}
+              expression { return cicd_config.platforms.linux.build_types.pr_base || (changeset.includes('infra/dependencies/.*') || changeset.includes('infra/containers/ubuntu-focal-araas-base/.*'))}
             }
           }
           stages {
