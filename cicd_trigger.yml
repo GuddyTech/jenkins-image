@@ -6,7 +6,7 @@
     linux:
       base_image: true            #true 
       build_types:
-        pr_base: true             #true
+        pr_base: false             #true
         main_base: true           #true
       run_test:
         main_test: false         #false
@@ -20,7 +20,7 @@
         pr_base: true             #true
         main_base: true           #true
       run_test:
-        main_test: true          #false
+        main_test: false          #false
         build_pyatk: true         #true
         build_pyaraas: true       #true
       release: true               #true
