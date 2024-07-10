@@ -1,0 +1,37 @@
+---
+# Note: set cicd_trigger to default values before merging your PR
+# Documentation on using cicd trigger 
+# See the comments for the default trigger values
+  platforms: 
+    linux:
+      base_image: true            #true 
+      build_types:
+        pr_base: false             #true
+        main_base: false           #true
+      run_test:
+        main_test: true         #false
+        build_pyatk: false         #true
+        build_pyaraas: false      #true
+      release: false             #true
+
+    windows:
+      base_image: true            #true
+      build_types:
+        pr_base: true             #true
+        main_base: true           #true
+      run_test:
+        main_test: true          #false
+        build_pyatk: true         #true
+        build_pyaraas: true       #true
+      release: true               #true
+
+    macOs:
+      run_test:
+        main_test: true         #false
+        build_server: false       #true 
+
+
+
+
+
+         
