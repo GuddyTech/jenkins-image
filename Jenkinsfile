@@ -582,9 +582,9 @@ pipeline {
         }
 
         stage("Pyaraas Windows") {
-          agent {
-            label 'aws-win2019'
-          }
+          // agent {
+          //   label 'aws-win2019'
+          // }
           when { buildingTag() }
           stages {
             stage("Prepare"){
