@@ -126,7 +126,7 @@ pipeline {
           when {
             anyOf {
               branch 'main'
-              expression { return cicd_config.platforms.linux.run_test.build_pyatk && (changeset.includes('src/pyatk/.*') || changeset.includes('src/robot_server/.*') || changeset.includes('src/common/.*') ||  changeset.includes('src/third_party/.*') || changeset.includes('cmake/.*'))}
+              expression { return cicd_config.platforms.linux.run_test.build_pyatk || (changeset.includes('src/pyatk/.*') || changeset.includes('src/robot_server/.*') || changeset.includes('src/common/.*') ||  changeset.includes('src/third_party/.*') || changeset.includes('cmake/.*'))}
             }
           }
           stages {
@@ -169,7 +169,7 @@ pipeline {
           when {
             anyOf {
               branch 'main'
-              expression { cicd_config.platforms.linux.run_test.build_pyaraas && (changeset.includes('src/pyatk/.*') || changeset.includes('src/pyaraas/.*') || changeset.includes('src/robot_server/.*') || changeset.includes('src/common/.*') ||  changeset.includes('src/third_party/.*') || changeset.includes('cmake/.*'))}
+              expression { cicd_config.platforms.linux.run_test.build_pyaraas || (changeset.includes('src/pyatk/.*') || changeset.includes('src/pyaraas/.*') || changeset.includes('src/robot_server/.*') || changeset.includes('src/common/.*') ||  changeset.includes('src/third_party/.*') || changeset.includes('cmake/.*'))}
             }
           }
           stages {
