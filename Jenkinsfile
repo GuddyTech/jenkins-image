@@ -1,4 +1,4 @@
- // Special thanks to Frazer Seymour for inspiration for a lot of this Jenkinsfile
+ // Special thanks to Frazer Seymour for inspiration for a lot of this Jenkinsfil
 
 // @Library(['PSL@master']) _
 
@@ -57,6 +57,8 @@ pipeline {
       steps {
         catchError(message: 'Change set failed', buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
           script {
+            // Load the jenkins_trigger file
+            cicd_config = readYaml file: 'cicd_trigger.yml'
             echo "Changeset"
           }
         }
