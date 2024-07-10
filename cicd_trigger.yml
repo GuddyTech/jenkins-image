@@ -4,7 +4,7 @@
 # See the comments for the default trigger values
   platforms: 
     linux:
-      base_image: true            #true 
+      base_image: false            #true 
       build_types:
         pr_base: false             #true
         main_base: false           #true
@@ -27,7 +27,7 @@
 
     macOs:
       run_test:
-        main_test: true         #false
+        main_test: false         #false
         build_server: false       #true 
 
 
